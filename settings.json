@@ -1,0 +1,67 @@
+{
+    "models": [
+        {
+            "name": "mistralai/Mistral-7B-Instruct-v0.3",
+            "host": "http://0.0.0.0",
+            "port": 1304,
+            "client": "vLLM"
+        },
+        {
+            "name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "host": "http://0.0.0.0",
+            "port": 1303,
+            "client": "vLLM"
+        },
+        {
+            "name": "meta-llama/CodeLlama-34b-Instruct-hf",
+            "host": "http://0.0.0.0",
+            "port": 1305,
+            "client": "vLLM"
+        },
+        {
+            "name": "Qwen/Qwen2-7B-Instruct",
+            "host": "http://0.0.0.0",
+            "port": 1300,
+            "client": "vLLM"
+        },
+        {
+            "name": "deepseek-coder",
+            "host": "https://api.deepseek.com/",
+            "port": "",
+            "client": "DeepSeek"
+        },
+        {
+            "name": "deepseek-chat",
+            "host": "https://api.deepseek.com/",
+            "port": "",
+            "client": "DeepSeek"
+        },
+        {
+            "name": "GPT4o",
+            "host": "",
+            "port": "",
+            "client": "AzureOpenAI"
+        },
+        {
+            "name": "claude-3-5-sonnet-20240620",
+            "host": "",
+            "port": "",
+            "client": "Claude"
+        }
+    ],
+    "experiments": ["EntExt", "RelExt"],
+    "parameters": {
+        "EntExt": {
+            "max_tokens": 2048, 
+            "top_p": 0.95, 
+            "temperature": 0.7,
+            "top_k": 30
+        },
+        "RelExt": {
+            "max_tokens": 2048, 
+            "top_p": 0.95, 
+            "temperature": 0.7,
+            "top_k": 30
+        }
+    }
+}

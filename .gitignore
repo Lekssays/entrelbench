@@ -1,0 +1,12 @@
+.env
+.DS_Store
+*.log
+results/EntExt/*.json
+results/RelExt/*.json
+test.py
+deploy.md
+Results_*
+datasets/user_study.jsonl
+datasets/user_study_relations.json
+datasets/user_study_entities.json
+datasets/relationsv3_cleaned.jsonl
