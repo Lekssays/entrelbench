@@ -7,15 +7,21 @@ A Benchmarking Pipeline for Cyber Security Entities and Relations Extraction
 
 ## Run Benchmarking
 
-### Entity Extraction:
+### Entity Extraction
 ```
 python3 main.py --dataset_path entrelbench_entities.json --task EntExt --model mistralai/Mistral-7B-Instruct-v0.3 --max_tokens 2048 --temperature 0.7
 ```
 
-### Relation Extraction:
+### Relation Extraction
 ```
 python3 main.py --dataset_path entrelbench_relations.json --task RelExt --model mistralai/Mistral-7B-Instruct-v0.3 --max_tokens 2048 --temperature 0.7
 ```
+
+## Evaluation
+```
+python3 evaluate.py [EntExt,RelExt] entrelbench
+```
+
 
 ### Few Notes:
 - `settings.json` file contains the default connection and sampling parameters.
